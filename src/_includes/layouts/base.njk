@@ -21,22 +21,23 @@
     <title>{{ title }}</title>
     <link rel="stylesheet" href="css/style.css" />
 
-    <!-- Javascript Preloaded Needed Area -->
-    <script type = "text/javascript" src="js/customFunctions.js"></script>
-
 </head>
 <body onload="currentDate()">
+    <!-- HEADER -->
     <header>
         <h1>{{ title }}</h1>
         {% include "layouts/navbar.njk" %}
     </header>
+    <!-- MAIN CONTENT -->
     <main>
         {{ content | safe }}
     </main>
+    <!-- FOOTER -->
     <footer>
         {% include "layouts/footer.njk" %}
     </footer>
 
-
+    <!-- Javascript Area -->
+    <script type = "text/javascript" src="js/customFunctions.js"></script>
 </body>
 </html>
