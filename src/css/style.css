@@ -1,18 +1,50 @@
+/* TODO: Set standard decent fonts and colors https://www.w3schools.com/css/css_font_pairings.asp 
+Maybe just use Tailwind CSS look into that after running through everything on W3 */
 /* Body Style */
 body {
-    font-family: sans-serif;
+    font-family: Verdana, sans-serif;
     color: blueviolet;
     background-color: lightblue;
+    /* background-image: url("../img/SlothA.jpg"); */
+    background-repeat: no-repeat;
+    background-position: left top;
 }
 /* Nav Bar Styles */
 nav {
     color:black;
     text-align: center;
+    font-family: "Audiowide", sans-serif;
 }
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+  }
+nav li {
+    float: left;
+  }
+nav li a {
+    display: inline-block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+nav li a:hover {
+    background-color: #111;
+  }
+nav .active {
+    background-color: red;
+  }
 
 /* Text Element Styles */
 h1 {
+    font-family: Georgia, serif;
     color:crimson;
+    text-shadow: 2px 2px blue;
+    font-size: 5vw; /* Responsive Font Size example*/
 }
 p {
     color:brown;
@@ -20,42 +52,85 @@ p {
 }
 p.center {
     text-align: center;
+    background-color: darkgray;
+    font-family: "Times New Roman", Times, serif;
   }
+p.dottedborder{
+    border-width:2px;
+    border-style: dotted;
+}
 p.large {
     font-size: 200%;
   }
+p.roundedborder{
+    border-radius: 5px;
+}
 pre {
     color:olive;
-    border: 2px solid olive;
+    border-width: 2px; 
+    border-style: solid;
+    border-color: olive;
     padding: 30px;
 }
 
 /* Link Styles */
+a{
+    color: black;
+}
 a:link {
     color: green;
     background-color: transparent;
     text-decoration: none;
   }
-  
-  a:visited {
+a:visited {
     color: pink;
     background-color: transparent;
     text-decoration: none;
   }
-  
-  a:hover {
+a:hover {
     color: red;
     background-color: transparent;
     text-decoration: underline;
   }
-  
-  a:active {
+a:active {
     color: yellow;
     background-color: transparent;
     text-decoration: underline;
   }
 
+/* List Styles */
+ul.ul-cirle {
+    list-style-type: circle;
+  }
+
+ul.ul-square {
+    list-style-type: square;
+  }  
+ol.ol-roman-uppoer {
+    list-style-type: upper-roman;
+  }
+ol.alpha-lower {
+    list-style-type: lower-alpha;
+  }
+
+/* Table Styles */
+/* https://www.w3schools.com/css/css_table_responsive.asp */
+tr:hover{
+    background-color: coral;
+}
+tr:nth-child(even){
+    background-color: lightgreen;
+}
+
+/* Div Element Styles */
+
 /* id Elements - An id name cannot start with a number */
 #id1{
     color:darkorange
+}
+#hidden{
+    display: none; /* remove an element */
+}
+#hide-visibility{
+    visibility: hidden; /* hides but does not remove an element. Still takes up the space */
 }

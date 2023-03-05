@@ -11,11 +11,16 @@ images:
 images-width: 300px
 ---
 
-<p id="id1" class="center large">CONTENT FROM MARKDOWN PAGE</p>
+<p id="id1" class="center large dottedborder roundedborder">CONTENT FROM MARKDOWN PAGE</p>
 
-next line <br /> break
+<p class="font-effect-neon">next line</p> <br /> <p>break</p>
 
 <h2>&#128512;</h2>
+
+<i class="material-icons">cloud</i>
+<i class="material-icons">favorite</i>
+<i class="material-icons">attachment</i>
+<i class="material-icons">computer</i>
 
 <!-- comment etc -->
 <pre>
@@ -27,7 +32,7 @@ next line <br /> break
 
 <p> 
 <form>
-  <label for="favcolor">Select a color:</label>
+  <label for="favcolor" class="font-effect-fire">Select a color:</label>
   <input type="color" id="favcolor" name="favcolor"> <br />
   <input type="date" id="birthday" name="birthday"> <br />
   <input type="email" id="email" name="email" placeholder="example@example.com" required="required" autofocus="autofocus" autocomplete="on"> <br />
