@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="{{ lang }}">
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Description Header Tags -->
+    <meta name="keywords" content="one, two, three" />
+    <meta name="description" content="{{ description }}" />
+    <meta name="author" content="John Doe" />
+    <!--- Open Graph tags -->
+    <meta property="og:title" content="{{ title }}" />
+    <meta property="og:description" content="{{ description }}" />
+    <meta property="og:image" content="img/ogimage.png" />
+    <meta property="og:image:type" content="image/jpeg" />
+    <meta property="og:image:alt" content="OG image description" />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="{{ ogwebsite_URL }}" />
+    <meta property="og:locale" content="{{ oglocale }}" />
+
+    <title>{{ title }}</title>
+    <link rel="stylesheet" href="css/style.css" />
+
+
+</head>
+<body>
+    <header>
+        <h1>{{ title }}</h1>
+        {% include "layouts/navbar.njk" %}
+    </header>
+    <main>
+        {{ content | safe }}
+    </main>
+    <footer>
+        {% include "layouts/footer.njk" %}
+    </footer>
+
+    <!-- Javascript Area -->
+    <script type = "text/javascript" src="js/customFunctions.js"></script>  
+</body>
+</html>
