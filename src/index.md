@@ -11,7 +11,7 @@ images:
 images-width: 300px
 ---
 
-CONTENT FROM MARKDOWN PAGE
+<p id="id1" class="center large">CONTENT FROM MARKDOWN PAGE</p>
 
 next line <br /> break
 

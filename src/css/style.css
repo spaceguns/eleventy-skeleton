@@ -1,7 +1,16 @@
+/* Body Style */
 body {
     font-family: sans-serif;
     color: blueviolet;
+    background-color: lightblue;
 }
+/* Nav Bar Styles */
+nav {
+    color:black;
+    text-align: center;
+}
+
+/* Text Element Styles */
 h1 {
     color:crimson;
 }
@@ -9,13 +18,19 @@ p {
     color:brown;
     font-family: 'Courier New', Courier, monospace;
 }
+p.center {
+    text-align: center;
+  }
+p.large {
+    font-size: 200%;
+  }
 pre {
     color:olive;
     border: 2px solid olive;
     padding: 30px;
 }
 
-
+/* Link Styles */
 a:link {
     color: green;
     background-color: transparent;
@@ -39,3 +54,8 @@ a:link {
     background-color: transparent;
     text-decoration: underline;
   }
+
+/* id Elements - An id name cannot start with a number */
+#id1{
+    color:darkorange
+}
