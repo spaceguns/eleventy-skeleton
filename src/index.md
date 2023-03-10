@@ -17,10 +17,17 @@ images-width: 300px
 
 <h2>&#128512;</h2>
 
+<i class="material-icons">computer</i>
 <i class="material-icons">cloud</i>
 <i class="material-icons">favorite</i>
 <i class="material-icons">attachment</i>
 <i class="material-icons">computer</i>
+
+<p><div class="clearfix"><img src="img/SlothA.jpg" alt=" float right" id="float-right" width="150px">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus imperdiet, nulla et dictum interdum, nisi lorem egestas odio, vitae scelerisque enim ligula venenatis dolor. Maecenas nisl est, ultrices nec congue eget, auctor vitae massa. Fusce luctus vestibulum augue ut aliquet. Mauris ante ligula, facilisis sed ornare eu, lobortis in odio. Praesent convallis urna a lacus interdum ut hendrerit risus congue. Nunc sagittis dictum nisi, sed ullamcorper ipsum dignissim ac. In at libero sed nunc venenatis imperdiet sed ornare turpis. Donec vitae dui eget tellus gravida venenatis. Integer fringilla congue eros non fermentum. Sed dapibus pulvinar nibh tempor porta. Cras ac leo purus. Mauris quis diam velit.</div></p>
+
+<div class="center">
+  <p>Hello World!</p>
+</div>
 
 <!-- comment etc -->
 <pre>

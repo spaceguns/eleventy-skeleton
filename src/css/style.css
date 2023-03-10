@@ -21,23 +21,23 @@ nav ul {
     padding: 0;
     overflow: hidden;
     background-color: #333;
-  }
+}
 nav li {
     float: left;
-  }
+}
 nav li a {
     display: inline-block;
     color: white;
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
-  }
+}
 nav li a:hover {
     background-color: #111;
-  }
+}
 nav .active {
     background-color: red;
-  }
+}
 
 /* Text Element Styles */
 h1 {
@@ -54,14 +54,14 @@ p.center {
     text-align: center;
     background-color: darkgray;
     font-family: "Times New Roman", Times, serif;
-  }
+}
 p.dottedborder{
     border-width:2px;
     border-style: dotted;
 }
 p.large {
     font-size: 200%;
-  }
+}
 p.roundedborder{
     border-radius: 5px;
 }
@@ -81,37 +81,36 @@ a:link {
     color: green;
     background-color: transparent;
     text-decoration: none;
-  }
+}
 a:visited {
     color: pink;
     background-color: transparent;
     text-decoration: none;
-  }
+}
 a:hover {
     color: red;
     background-color: transparent;
     text-decoration: underline;
-  }
+}
 a:active {
     color: yellow;
     background-color: transparent;
     text-decoration: underline;
-  }
+}
 
 /* List Styles */
 ul.ul-cirle {
     list-style-type: circle;
-  }
-
+}
 ul.ul-square {
     list-style-type: square;
-  }  
+}  
 ol.ol-roman-uppoer {
     list-style-type: upper-roman;
-  }
+}
 ol.alpha-lower {
     list-style-type: lower-alpha;
-  }
+}
 
 /* Table Styles */
 /* https://www.w3schools.com/css/css_table_responsive.asp */
@@ -133,4 +132,24 @@ tr:nth-child(even){
 }
 #hide-visibility{
     visibility: hidden; /* hides but does not remove an element. Still takes up the space */
+}
+#float-right{
+    float:right
+}
+#float-left{
+    float: left;
+}
+
+/* class Elements */
+.clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+.center {
+    margin: auto;
+    width: 50%;
+    border: 3px solid green;
+    padding: 10px;
+    text-align: center;
 }
