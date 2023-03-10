@@ -1,5 +1,7 @@
 /* TODO: Set standard decent fonts and colors https://www.w3schools.com/css/css_font_pairings.asp 
-Maybe just use Tailwind CSS look into that after running through everything on W3 */
+Maybe just use Tailwind CSS look into that after running through everything on W3 
+Rounded borders https://www.w3schools.com/css/css3_borders.asp
+*/
 /* Body Style */
 body {
     font-family: Verdana, sans-serif;
@@ -21,6 +23,10 @@ nav ul {
     padding: 0;
     overflow: hidden;
     background-color: #333;
+    /* below fixes it to the top/makes it sticky on scroll */
+    position: fixed;
+    top: 0;
+    width: 100%;
 }
 nav li {
     float: left;
@@ -38,6 +44,30 @@ nav li a:hover {
 nav .active {
     background-color: red;
 }
+nav a:link {
+    color: green;
+    background-color: transparent;
+    text-decoration: none;
+}
+nav a:visited {
+    color: green;
+    background-color: transparent;
+    text-decoration: none;
+}
+nav a:hover {
+    color: red;
+    background-color: transparent;
+    text-decoration: underline;
+}
+nav a:active {
+    color: yellow;
+    background-color: transparent;
+    text-decoration: underline;
+}
+/*dropdowns*/
+
+
+
 
 /* Text Element Styles */
 h1 {
@@ -121,7 +151,43 @@ tr:nth-child(even){
     background-color: lightgreen;
 }
 
+/* Form Styles */
+input:focus {
+    background-color: yellow;
+    border: 3px solid #555;
+}
+input[type=text] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    border: 1px solid black;
+    border-radius: 4px;
+}
+
+/* Image Styles*/
+img.opacity { /* Set image opacity to 50% */
+    opacity: 0.5;
+}
+  
+img:hover { /* Undo opactity changes on mouseover */
+    opacity: 1.0;
+}
+
 /* Div Element Styles */
+div.transbox { /* Transparent box */
+    margin: 30px;
+    background-color: #ffffff;
+    border: 1px solid black;
+    opacity: 0.6;
+}
+  
+div.transbox p { /* Transparent box text */
+    margin: 5%;
+    font-weight: bold;
+    color: #000000;
+}
+
 
 /* id Elements - An id name cannot start with a number */
 #id1{
@@ -152,4 +218,21 @@ tr:nth-child(even){
     border: 3px solid green;
     padding: 10px;
     text-align: center;
+}
+
+/* Linear gradients */
+#grad1 {
+    height: 55px;
+    background-color: red; /* For browsers that do not support gradients */
+    background-image: linear-gradient(to right, red, orange, yellow, green, blue, indigo, violet);
+} 
+
+#grad2 {
+    height: 200px; /* transparency */
+    background-image: linear-gradient(to right, rgba(255,0,0,0), rgba(255,0,0,1));
+}
+#grad5 {
+    height: 200px;
+    background-color: red; /* For browsers that do not support gradients */
+    background-image: repeating-linear-gradient(45deg,red,yellow 7%,green 10%);
 }

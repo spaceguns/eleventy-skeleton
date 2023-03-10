@@ -23,7 +23,7 @@ images-width: 300px
 <i class="material-icons">attachment</i>
 <i class="material-icons">computer</i>
 
-<p><div class="clearfix"><img src="img/SlothA.jpg" alt=" float right" id="float-right" width="150px">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus imperdiet, nulla et dictum interdum, nisi lorem egestas odio, vitae scelerisque enim ligula venenatis dolor. Maecenas nisl est, ultrices nec congue eget, auctor vitae massa. Fusce luctus vestibulum augue ut aliquet. Mauris ante ligula, facilisis sed ornare eu, lobortis in odio. Praesent convallis urna a lacus interdum ut hendrerit risus congue. Nunc sagittis dictum nisi, sed ullamcorper ipsum dignissim ac. In at libero sed nunc venenatis imperdiet sed ornare turpis. Donec vitae dui eget tellus gravida venenatis. Integer fringilla congue eros non fermentum. Sed dapibus pulvinar nibh tempor porta. Cras ac leo purus. Mauris quis diam velit.</div></p>
+<p><div class="clearfix"><img src="img/SlothA.jpg" alt=" float right" id="float-right" width="150px" class="opacity">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus imperdiet, nulla et dictum interdum, nisi lorem egestas odio, vitae scelerisque enim ligula venenatis dolor. Maecenas nisl est, ultrices nec congue eget, auctor vitae massa. Fusce luctus vestibulum augue ut aliquet. Mauris ante ligula, facilisis sed ornare eu, lobortis in odio. Praesent convallis urna a lacus interdum ut hendrerit risus congue. Nunc sagittis dictum nisi, sed ullamcorper ipsum dignissim ac. In at libero sed nunc venenatis imperdiet sed ornare turpis. Donec vitae dui eget tellus gravida venenatis. Integer fringilla congue eros non fermentum. Sed dapibus pulvinar nibh tempor porta. Cras ac leo purus. Mauris quis diam velit.</div></p>
 
 <div class="center">
   <p>Hello World!</p>
@@ -48,7 +48,24 @@ images-width: 300px
 </form> 
 </p>
 
+<p>
+<form>
+  <label for="fname">First Name</label>
+  <input type="text" id="fname" name="fname">
+  <label for="lname">Last Name</label>
+  <input type="text" id="lname" name="lname">
+</form>
+</p>
+
 <a href="sdasdsadasd">unclicked link</a>
+
+<div id="grad1" style="text-align:center;margin:auto;color:#888888;font-size:40px;font-weight:bold">
+Rainbow Background
+</div>
+<p><div id="grad2"></div></p>
+
+<p>A repeating linear gradient with solid stripes:</p>
+<div id="grad5"></div>
 
 {% for filename in images %}   
     <img src="img/{{ filename }}" alt="{{ filename }}" width="{{ images-width }}" /> <a href="img/{{ filename | url_encode }}">{{ filename }}</a>  
