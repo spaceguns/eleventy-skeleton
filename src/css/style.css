@@ -1,6 +1,14 @@
 /* TODO: Set standard decent fonts and colors https://www.w3schools.com/css/css_font_pairings.asp 
 Maybe just use Tailwind CSS look into that after running through everything on W3 
 Rounded borders https://www.w3schools.com/css/css3_borders.asp
+Web fonts https://www.w3schools.com/css/css3_fonts.asp
+Changes to screen size or orientation https://www.w3schools.com/css/css3_mediaqueries_ex.asp
+Flexbox & Perfect Centering https://www.w3schools.com/css/css3_flexbox_container.asp
+Responsive https://www.w3schools.com/css/css_rwd_intro.asp
+12 grid view https://www.w3schools.com/css/css_rwd_grid.asp
+Mobile first https://www.w3schools.com/css/css_rwd_mediaqueries.asp
+Responsive images https://www.w3schools.com/css/css_rwd_images.asp
+Colors https://www.w3schools.com/colors/colors_names.asp
 */
 /* Body Style */
 body {
@@ -65,7 +73,43 @@ nav a:active {
     text-decoration: underline;
 }
 /*dropdowns*/
-
+/* Dropdown Button */
+.dropbtn {
+    background-color: #04AA6D;
+    color: white;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+} 
+/* The container <div> - needed to position the dropdown content */
+.dropdown {
+    position: relative;
+    display: inline-block;
+}  
+/* Dropdown Content (Hidden by Default) */
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+/* Links inside the dropdown */
+ .dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover {background-color: #ddd;}
+  
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {display: block;}
+  
+/* Change the background color of the dropdown button when the dropdown content is shown */
+.dropdown:hover .dropbtn {background-color: #3e8e41;} 
 
 
 
@@ -173,6 +217,9 @@ img.opacity { /* Set image opacity to 50% */
 img:hover { /* Undo opactity changes on mouseover */
     opacity: 1.0;
 }
+img.circleimage {
+    border-radius: 50%;
+}
 
 /* Div Element Styles */
 div.transbox { /* Transparent box */
@@ -181,7 +228,6 @@ div.transbox { /* Transparent box */
     border: 1px solid black;
     opacity: 0.6;
 }
-  
 div.transbox p { /* Transparent box text */
     margin: 5%;
     font-weight: bold;
@@ -235,4 +281,54 @@ div.transbox p { /* Transparent box text */
     height: 200px;
     background-color: red; /* For browsers that do not support gradients */
     background-image: repeating-linear-gradient(45deg,red,yellow 7%,green 10%);
+}
+
+/* Transitions https://www.w3schools.com/css/css3_transitions.asp */
+#transition1 {
+    width: 100px;
+    height: 100px;
+    background: red;
+    transition: width 2s, height 4s;
+}
+#transition1:hover {
+    width: 300px;
+    height: 300px;
+}
+
+/* Tooltip container */
+.tooltip {
+    position: relative;
+    display: inline-block;
+    border-bottom: 1px dotted black; /* If you want dots under the hoverable text */
+}
+/* Tooltip text */
+.tooltip .tooltiptext {
+    visibility: hidden;
+    width: 120px;
+    background-color: black;
+    color: #fff;
+    text-align: center;
+    padding: 5px 0;
+    border-radius: 6px;
+   
+    /* Position the tooltip text */
+    position: absolute;
+    z-index: 1;
+    bottom: 100%;
+    left: 50%;
+    margin-left: -60px;
+}
+  /* Show the tooltip text when you mouse over the tooltip container */
+.tooltip:hover .tooltiptext {
+    visibility: visible;
+}
+.tooltip .tooltiptext::after {
+    content: " ";
+    position: absolute;
+    top: 100%; /* At the bottom of the tooltip */
+    left: 50%;
+    margin-left: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: black transparent transparent transparent;
 }

@@ -13,6 +13,15 @@ images-width: 300px
 
 <p id="id1" class="center large dottedborder roundedborder">CONTENT FROM MARKDOWN PAGE</p>
 
+<div class="dropdown">
+<button class="dropbtn">Dropdown</button>
+    <div class="dropdown-content">
+    <a href="#">Link 1</a>
+    <a href="#">Link 2</a>
+    <a href="#">Link 3</a>
+    </div>
+</div>
+
 <p class="font-effect-neon">next line</p> <br /> <p>break</p>
 
 <h2>&#128512;</h2>
@@ -23,7 +32,19 @@ images-width: 300px
 <i class="material-icons">attachment</i>
 <i class="material-icons">computer</i>
 
-<p><div class="clearfix"><img src="img/SlothA.jpg" alt=" float right" id="float-right" width="150px" class="opacity">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus imperdiet, nulla et dictum interdum, nisi lorem egestas odio, vitae scelerisque enim ligula venenatis dolor. Maecenas nisl est, ultrices nec congue eget, auctor vitae massa. Fusce luctus vestibulum augue ut aliquet. Mauris ante ligula, facilisis sed ornare eu, lobortis in odio. Praesent convallis urna a lacus interdum ut hendrerit risus congue. Nunc sagittis dictum nisi, sed ullamcorper ipsum dignissim ac. In at libero sed nunc venenatis imperdiet sed ornare turpis. Donec vitae dui eget tellus gravida venenatis. Integer fringilla congue eros non fermentum. Sed dapibus pulvinar nibh tempor porta. Cras ac leo purus. Mauris quis diam velit.</div></p>
+<p><div id="transition1"></div></p>
+
+<p><div class="clearfix"><img src="img/SlothA.jpg" alt="float right" id="float-right" width="150px" class="opacity circleimage">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus imperdiet, nulla et dictum interdum, nisi lorem egestas odio, vitae scelerisque enim ligula venenatis dolor. Maecenas nisl est, ultrices nec congue eget, auctor vitae massa. Fusce luctus vestibulum augue ut aliquet. Mauris ante ligula, facilisis sed ornare eu, lobortis in odio. Praesent convallis urna a lacus interdum ut hendrerit risus congue. Nunc sagittis dictum nisi, sed ullamcorper ipsum dignissim ac. In at libero sed nunc venenatis imperdiet sed ornare turpis. Donec vitae dui eget tellus gravida venenatis. Integer fringilla congue eros non fermentum. Sed dapibus pulvinar nibh tempor porta. Cras ac leo purus. Mauris quis diam velit.</div></p>
+
+<p><div class="tooltip">Tooltip! Mouseover me!
+  <span class="tooltiptext">Tooltip text</span>
+</div></p>
+
+<p><button type="button"
+onclick="currentDateTime()">
+Click me to display Date and Time.</button></p>
+<p id="datetime"></p>
+
 
 <div class="center">
   <p>Hello World!</p>
